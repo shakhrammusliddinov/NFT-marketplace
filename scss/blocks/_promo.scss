@@ -1,0 +1,77 @@
+.promo {
+    width: 100%;
+    padding: 80px 0;
+    .promo_items {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        .promo_text {
+            width: 50%;
+            .promo_title {
+                font-size: 67px;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: capitalize;
+                color: #fff;
+            }
+            .promo_descr {
+                font-size: 22px;
+                color: #fff;
+                margin-top: 20px;
+            }
+            .promo_btn {
+                @include fill-btn-style;
+                padding: 17px 48px;
+                margin-top: 30px;
+            }
+            .promo_static {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .static_item {
+                    width: 150px;
+                    .item_value {
+                        font-size: 28px;
+                        font-weight: 700;
+                        font-family: 'Space Mono', monospace;
+                        color: #fff;
+                    }
+                    .item_title {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .promo_card {
+            width: 50%;
+            background-color: #3b3b3b;
+            border-radius: 20px;
+            @include up-animation;
+            .card_img {
+                width: 100%;
+            }
+            .card_text {
+                padding: 20px;
+                .card_title {
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                .card_user {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    margin-top: 10px;
+                    .user_name {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .promo_small_items {
+            display: none;
+        }
+    }
+}

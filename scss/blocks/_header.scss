@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #2b2b2b;
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    .container {
+        max-width: 1320px;
+        padding: 0 15px;
+    }
+    .header_items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            li {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: 0.3s all;
+                    &:hover {
+                        transition: 0.3s all;
+                        color: $main-color;
+                    }
+                }
+                button {
+                    padding: 18px 28px;
+                    @include fill-btn-style;
+                }
+            }
+        }
+        .header_burger {
+            display: none;
+        }
+    }
+}

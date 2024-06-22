@@ -1,0 +1,79 @@
+.creators {
+    width: 100%;
+    padding: 80px 0;
+    .creators_items {
+        width: 100%;
+        .creators_header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .header_titles {
+                .creators_title {
+                    @include title-style;
+                }
+                .creators_subtitle {
+                    @include subtitle-style;
+                }
+            }
+            .creators_btn {
+                @include empty-btn-style;
+                padding: 19px 50px;
+            }
+        }
+        .creators_content {
+            margin-top: 60px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 240px);
+            grid-template-rows: repeat(3, 238px);
+            justify-content: space-between;
+            gap: 30px 0;
+            .creators_item {
+                background-color: #3b3b3b;
+                border-radius: 20px;
+                text-align: center;
+                position: relative;
+                padding: 20px;
+                @include up-animation;
+                .item_num {
+                    height: 30px;
+                    width: 30px;
+                    position: absolute;
+                    left: 20px;
+                    top: 18px;
+                    background-color: #2b2b2b;
+                    border-radius: 100%;
+                    color: #858584;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Space Mono', monospace;
+                }
+                .item_text {
+                    margin-top: 20px;
+                    .item_title {
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    .item_info {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5px;
+                        .info_title {
+                            color: #858584;
+                        }
+                        .info_value {
+                            color: #fff;
+                            font-family: 'Space Mono', monospace;
+                        }
+                    }
+                }
+            }
+        }
+        .creators_small_btn {
+            display: none;
+        }
+    }
+}

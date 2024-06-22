@@ -1,0 +1,81 @@
+.mashroom {
+    width: 100%;
+    background: linear-gradient(
+            180deg,
+            rgba(162, 89, 255, 0),
+            rgb(162, 89, 255) 100%
+        ),
+        url('../img/mashroom-bg.png') center center/cover no-repeat;
+    .mashroom_items {
+        padding-top: 360px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        // align-items: end;
+        .mashroom_content {
+            .mashroom_card {
+                padding: 10px 20px;
+                border-radius: 20px;
+                background-color: #2b2b2b;
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                .card_name {
+                    color: #fff;
+                }
+            }
+            .mashroom_title {
+                @include title-style;
+                font-size: 51px;
+                margin-top: 30px;
+            }
+            .mashroom_btn {
+                @include fill-btn-style;
+                padding: 19px 50px;
+                background-color: #fff;
+                color: #000;
+                border-color: #fff;
+                margin-top: 30px;
+                i {
+                    color: $main-color;
+                }
+                &:hover {
+                    color: #fff;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .mashroom_time {
+            align-self: flex-end;
+            width: 295px;
+            padding: 30px;
+            background-color: #3b3b3b80;
+            border-radius: 20px;
+            font-family: 'Space Mono', monospace;
+            color: #fff;
+            font-weight: 700;
+            .time_title {
+                font-size: 12px;
+                font-weight: 400;
+            }
+            .time_content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                .time_item {
+                    font-size: 38px;
+                    .time_name {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .mashroom_small_btn {
+            display: none;
+        }
+    }
+}

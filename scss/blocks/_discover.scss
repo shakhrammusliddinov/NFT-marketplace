@@ -1,0 +1,77 @@
+.discover {
+    padding: 80px 0;
+    width: 100%;
+    .discover_items {
+        width: 100%;
+        .discover_header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .discover_titles {
+                .discover_title {
+                    @include title-style;
+                }
+                .discover_subtitle {
+                    @include subtitle-style;
+                }
+            }
+            .discover_btn {
+                @include empty-btn-style;
+                padding: 19px 50px;
+            }
+        }
+        .discover_content {
+            margin-top: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .discover_item {
+                border-radius: 20px;
+                background-color: #3b3b3b;
+                @include up-animation;
+                .item_img {
+                    width: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+                .item_text {
+                    padding: 20px 30px;
+                    .item_title {
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    .item_user {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        margin-top: 5px;
+                        .user_name {
+                            color: #fff;
+                            font-family: 'Space Mono', monospace;
+                        }
+                    }
+                    .item_info {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 25px;
+                        .info_item {
+                            .info_title {
+                                color: #858584;
+                                font-size: 12px;
+                                font-family: 'Space Mono', monospace;
+                            }
+                            .info_value {
+                                font-family: 'Space Mono', monospace;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .discover_small_btn {
+            display: none;
+        }
+    }
+}

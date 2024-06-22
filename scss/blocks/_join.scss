@@ -1,0 +1,30 @@
+.join {
+    width: 100%;
+    .join_items {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        width: 100%;
+        .join_content {
+            width: 100%;
+            border-radius: 20px;
+            background-color: #3b3b3b;
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            .join_info {
+                .join_title {
+                    @include title-style;
+                }
+                .join_subtitle {
+                    @include subtitle-style;
+                    margin-top: 10px;
+                }
+                .join_form {
+                    margin-top: 40px;
+                    @include form-style;
+                }
+            }
+        }
+    }
+}
